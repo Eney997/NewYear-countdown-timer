@@ -6,7 +6,8 @@
 }
 body {
     font-family: 'Red Hat Text', sans-serif;
-    background-image: url(/assets/Combined\ Shape\ 2.svg);
+    background-image: url(/assets/Combined\ Shape\ 2.svg),url(/assets/mta.svg);
+    background-position: center,end;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -32,7 +33,7 @@ h1 {
     place-items: center;
     grid-template-areas: 'erti ori sami otxi';
     column-gap: 10px;
-    margin-top: 45px;
+    margin-top: 85px;
 }
 .time1 {
     grid-area: erti;
@@ -68,14 +69,16 @@ h1 {
     line-height: normal;
     letter-spacing: 2.959px;
 }
-.mta {
-    position: absolute;
-    z-index: 12;
-    margin-top: 375px;
-    
+.socials {
+    font-size: 30px;
+    margin-top: 250px;
 }
-.shadow {
-    position: relative;
-    z-index: 2;
-    margin-top: 370px;
+#fb:hover {
+    color: blue;
+}
+#pin:hover {
+    color: #FB5E84;
+}
+#ig:hover{
+    color: purple;
 }
