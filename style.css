@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Red Hat Text', sans-serif;
+    background-image: url(/assets/Combined\ Shape\ 2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color:  #261A2D ;
+    display: grid;
+    place-items: center;
+}
+h1 {
+    padding-top: 142px;
+    width: 327px;
+    color: #FFF;
+    text-align: center;
+    font-family: Red Hat Text;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 6.136px;
+    text-transform: uppercase;
+}
+.countdown {
+    display: grid;
+    place-items: center;
+    grid-template-areas: 'erti ori sami otxi';
+    column-gap: 10px;
+    margin-top: 45px;
+}
+.time1 {
+    grid-area: erti;
+}
+.time2 {
+    grid-area: ori;
+}
+.time3 {
+    grid-area: sami;
+}
+.time4 {
+    grid-area: otxi;
+}
+#saerto {
+    color: #FB5E84;
+    text-align: center;
+    font-family: Red Hat Text;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 71px; 
+    letter-spacing: -1.08px;
+}
+.saerto2 {
+    width: 70px;
+    height: 12px;
+    color: #8385A9;
+    text-align: center;
+    font-family: Red Hat Text;
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.959px;
+}
+.mta {
+    position: absolute;
+    z-index: 12;
+    margin-top: 375px;
+    
+}
+.shadow {
+    position: relative;
+    z-index: 2;
+    margin-top: 370px;
+}
