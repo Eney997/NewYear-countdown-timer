@@ -7,13 +7,13 @@ const countdownfunction = setInterval(function() {
     const now = new Date().getTime();
     
     
-    const distance = countDownDate - now;
+    const diff = countDownDate - now;
     
     
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
     
     
     document.querySelector('.days').innerText = days;
@@ -22,7 +22,7 @@ const countdownfunction = setInterval(function() {
     document.querySelector('.seconds').innerText = seconds;
     
    
-    if (distance < 0) {
+    if (diff < 0) {
         clearInterval(countdownfunction);
         document.getElementById("countdown").innerHTML = "HNY";
     }
